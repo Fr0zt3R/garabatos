@@ -21,12 +21,13 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        //Obtenemos los contenedores "expandibles"
         mLinearLayout = (LinearLayout) findViewById(R.id.expandable);
         mLinearL2 = (LinearLayout) findViewById(R.id.expandable1);
         //set visibility to GONE
         mLinearLayout.setVisibility(View.GONE);
         mLinearL2.setVisibility(View.GONE);
+        //Obtenemos las cabeceras y les asignamos su Listener
         mLinearLayoutHeader = (LinearLayout) findViewById(R.id.header);
         mLinearLayoutHeader2 = (LinearLayout) findViewById(R.id.header1);
 
